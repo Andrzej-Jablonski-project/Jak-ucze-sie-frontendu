@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Umieć frontend</title>
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="ul">
+                <li class="li"><a href="index.html">drugi tydzień</a></li>
+                <li class="li"><a href="thirdWeek.html">trzeci tydzień</a></li>
+                <li class="li"><a href="fourthWeek.html">czwarty tydzień</a></li>
+                <li class="li"><a href="fifthWeek.html">piąty tydzień</a></li>
+                <li class="li"><a href="sixthWeek.html">szósty tydzień</a></li>
+                <li class="li"><a href="seventhWeek.html">siódmy tydzień</a></li>
+                <li class="li"><a href="eightWeek.html">ósmy tydzień</a></li>
+                <li class="li"><a href="ninthWeek.html">dziewiąty tydzień</a></li>
+                <li class="li"><a href="tenthWeek.html">dziesiąty tydzień</a></li>
+                <li class="li"><a href="eleventhWeek.html">jedenasty tydzień</a></li>
+                <li class="li"><a href="twelfthWeek.html">dwunasty tydzień</a></li>
+            </ul>
+        </nav>
+        <h1 class="h1">Jak uczyłem się frontendu</h1>
+    </header>
+
+    <main class="main">
+
+        <header>
+            <nav>
+                <ul class="ul">
+                    <li class="li"><a href="#layer">Warstwy</a></li>
+                    <li class="li"><a href="#html">HTML</a></li>
+                    <li class="li"><a href="#css">CSS</a></li>
+                    <li class="li"><a href="#programming">Programowanie</a></li>
+                </ul>
+            </nav>
+            <section class="sectionHeader">
+                <h2 class="h2">O czym jest ta strona</h2>
+                <p>Na tej stronie opisuję przebieg mojej nauki podstaw frontendu. Jeżeli planujesz zostać frontendowcem
+                    i
+                    nie masz pojęcia o tworzeniu stron www oraz programowaniu, to tutaj możesz zobaczyć, jak może
+                    przebiegać
+                    twój proces nauczania od zera. Zapraszam!</p>
+            </section>
+        </header>
+
+        <article class="article">
+            <h2 class="h2">Drugi tydzień nauki</h2>
+            <section class="section" id="layer">
+                <h3 class="h3">Warstwy</h3>
+                <p>Każda strona składa się z warstw. Odliczając od zera, możemy wyróżnić trzy warstwy. </p>
+                <ul class="ul">
+                    <li>warstwa 0 - treść</li>
+                    <li>warstwa 1 - HTML (semantyka HTML)</li>
+                    <li>warstwa 2 - style CSS</li>
+                    <li>warstwa 3 - JavaScript</li>
+                </ul>
+                <p> Treść stron jest najważniejsza. Bez treści stron by nie było. <br>
+                    HTML poprzez znaczniki nadaje sens treści. <br>
+                    CSS nadaje wygląd stronie. <br>
+                    Język JavaScript, za pomocą którego tworzymy interakcje na stronie.
+                </p>
+            </section>
+            <section class="section" id="html">
+                <h3 class="h3">HTML - HyperText Markup Language</h3>
+                <p>HTML to język znaczników odpowiedzialny za właściwe opakowanie treści.</p>
+                <p>Semantyczny HTML jest wtedy, gdy napisany jest w sposób przedstawiający jakieś znaczenie dla
+                    przeglądarki oraz czytników ekranowych.
+                </p>
+                <p>
+                    Fundamentem każdej strony jest treść. Treścią na stronie są tekst, nagłówki, linki, listy,
+                    definicje, obrazki, video, audio, formularze, czyli wszystko, co jest nośnikiem informacji.
+                </p>
+                <p>
+                    HTML składa się ze znaczników, przykładowy znacznik znajduje się poniżej </p>
+                <code class="code">
+                    &lt;znacznik atrybut=&quot;wartość&quot;&gt;treść&lt;/znacznik&gt;
+                </code>
+                <p>
+                    Dokumentację HTML, czyli opis wszystkich znaczników znajdziesz na stronie
+                    <a href="https://www.w3schools.com/html">w3schools</a>
+                </p>
+            </section>
+            <section class="section" id="css">
+                <h3 class="h3">CSS - Kaskadowe arkusze stylów (Cascading Style Sheets)</h3>
+                <p>W języku polskim styl w liczbie mnogiej to stylów nie styli. Zapamiętaj to sobie!</p>
+                <p>CSS odpowiadają za prezentację treści, czyli za wygląd strony na ekranie, wydrukach itp.</p>
+                <p>Składnia CSS - reguły <br>
+                    <code class="code">selektor {<br>
+                        właściwość: wartość;<br>
+                        }
+                    </code>
+                </p>
+                <p>
+                    Dokumentację CSS znajdziesz na stronie
+                    <a href="https://www.w3schools.com/css">w3schools</a>
+                </p>
+            </section>
+            <section class="section" id="programming">
+                <h3 class="h3">Programowanie</h3>
+                <p>Programowanie jest to zamiana ludzkiego języka na język zrozumiały przez komputer.</p>
+                <p>Na świecie istnieje bardzo dużo języków programowania. Ja uczę się języka JavaScript, jest to
+                    najbardziej popularny język wykorzystywany do frontendu.</p>
+                <p>Do frontendu JavaScript jest używany przy modyfikowaniu treści, HTML, stylów dodatkowo dając im
+                    możliwość jakiejś interakcji. Te zmiany dokonywane są w obszarze DOM (Document Object Model).</p>
+            </section>
+
+        </article>
+
+    </main>
+    <footer class="footer">Projekt stworzony przez Andrzeja</footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

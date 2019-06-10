@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Umieć frontend</title>
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="ul">
+                <li class="li"><a href="index.html">drugi tydzień</a></li>
+                <li class="li"><a href="thirdWeek.html">trzeci tydzień</a></li>
+                <li class="li"><a href="fourthWeek.html">czwarty tydzień</a></li>
+                <li class="li"><a href="fifthWeek.html">piąty tydzień</a></li>
+                <li class="li"><a href="sixthWeek.html">szósty tydzień</a></li>
+                <li class="li"><a href="seventhWeek.html">siódmy tydzień</a></li>
+                <li class="li"><a href="eightWeek.html">ósmy tydzień</a></li>
+                <li class="li"><a href="ninthWeek.html">dziewiąty tydzień</a></li>
+                <li class="li"><a href="tenthWeek.html">dziesiąty tydzień</a></li>
+                <li class="li"><a href="eleventhWeek.html">jedenasty tydzień</a></li>
+                <li class="li"><a href="twelfthWeek.html">dwunasty tydzień</a></li>
+            </ul>
+        </nav>
+        <h1 class="h1">Jak uczyłem się frontendu</h1>
+    </header>
+
+    <main class="main">
+
+        <header>
+            <nav>
+                <ul class="ul">
+                    <li class="li"><a href="#work">Organizacja nauki/pracy</a></li>
+                    <li class="li"><a href="#html">HTML - znaczniki i atrybuty</a></li>
+                    <li class="li"><a href="#css">CSS - Sposoby stylowania</a></li>
+                    <li class="li"><a href="#browser">Działanie przeglądarki</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <article class="article">
+            <h2 class="h2">Trzeci tydzień nauki</h2>
+            <section class="section" id="work">
+                <h3 class="h3">Planowanie pracy</h3>
+                <p>Pracę planujemy po to, żeby efektywniej ją wykonywać. Dzięki planowaniu wiemy co dokładnie mamy
+                    wykonywać, widzimy, jaki jest postęp tej pracy oraz ile jeszcze mamy do zakończenia danej pracy.
+                    Dzięki temu zawsze będziemy zajmować się dokładnie tym, czym powinniśmy, przy okazji unikając często
+                    efektu zagubienia się.</p>
+                <p>Kanban jest jedną z wielu metod planowania pracy, którą właśnie wybrałem. Kanban wymyślili Japończycy
+                    w latach pięćdziesiątych i w wolnym tłumaczeniu oznacza "spis widoczny". Kanban często jest to
+                    tablica podzielona na trzy kolumny. Pierwsza kolumna odpowiada za "TODO" czyli rzeczy do zrobienia.
+                    Druga odpowiedzialna jest za "DOING" czyli w trakcie. W tej kolumnie powinna być zapisana tylko
+                    jedna rzecz aktualnie wykonywana. Ostatnia kolumna jest kolumną "DONE" czyli powinna zawierać rzeczy
+                    ukończone.</p>
+                <img class="img" src="img/kanban.Small.jpg" alt="tablica kanban">
+
+            </section>
+            <section class="section" id="html">
+                <h3 class="h3">HTML - znaczniki i atrybuty</h3>
+                <p>&lt;article&gt;...&lt;/article&gt; - wydzielona samodzielna treść</p>
+                <p>&lt;p&gt;...&lt;/p&gt; - paragraf, czyli akapit</p>
+                <p>&lt;b&gt;...&lt;/b&gt; - pogrubiony tekst bez znaczenia semantycznego</p>
+                <p>&lt;strong&gt;...&lt;/strong&gt; - pogrubiony tekst, który podkreśla wysoką istotność, ważność frazy
+                    w nim zawartej</p>
+                <p>&lt;i&gt;...&lt;/i&gt; - tekst wyróżniony kursywą bez znaczenia semantycznego</p>
+                <p>&lt;em&gt;...&lt;/em&gt; - tekst wyróżniony kursywą, który jest często wykorzystywany do podkreślenia
+                    wypowiedzi</p>
+                <p>&lt;a&gt;...&lt;/a&gt; - linki, łącza wewnątrz dokumentu</p>
+                <code class="code">&lt;a href="ścieżka docelowej treści" target=""&gt;opis łącza&lt;/a&gt;</code>
+                <p>atrybut id - identyfikuje element</p>
+                <code class="code">&lt;element id="moj-identyfikator"&gt;</code>
+                <p>&lt;br&gt; - przejście do nowej lini</p>
+                <p>&lt;img src="ścieżka do obrazka" alt="opis co przedstawia obrazek"&gt; - obrazek o podanym adresie
+                </p>
+                <h3 class="h3">Role i właściwości atrybutów</h3>
+                <ul class="ul">
+                    <li>atrybuty są "niewidzialne" - chowamy je w znaczniku</li>
+                    <li>nadają elementom dodatkowe właściwości (href, src)</li>
+                    <li>pozwalają na grupowanie elementów (class)</li>
+                    <li>pozwalają na identyfikowanie elementów (id)</li>
+                    <li>można je miksować</li>
+                    <li>spis atrybutów globalnych <br>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes">
+                            https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes</a>
+                    </li>
+                </ul>
+
+            </section>
+            <section class="section" id="css">
+                <h3 class="h3">CSS - Sposoby stylowania</h3>
+                <p>Stylowanie za pomocą elementów - nie jest to najlepszy sposób stylowania, ponieważ przy większym
+                    projekcie można się pogubić oraz mieć problemy z odpowiednim wyszukaniem, doborem selektora.</p>
+                <code class="code">main section article p {<br>
+                    właściwość: wartość;<br>
+                    }
+                </code>
+                <p>Stylowanie za pomocą klas - jest to zalecana metoda. Nazewnictwo klas stosujemy w języku angielskim.
+                </p>
+                <p>camelCase - do łączenia wyrazów wykorzystuję notację wielbłądziom</p>
+                <section>
+                    <h4 class="h4">Nazewnictwo klas</h4>
+                    <ul class="ul">
+                        <li>używaj pojedyńczych słów z j. angielskiego</li>
+                        <li>nazywaj rzeczy zgodnie z ich funkcją na stronie</li>
+                        <li>nazwy rozpoczynaj z małej litery np. article nie Article</li>
+                        <li>nie zaczynaj od cyfry</li>
+                        <li>jeśli nazwa składa się z dwóch słów użyj notacji wielbłądziej (camelCase) </li>
+                        <li>staraj się, żeby element miał jedną klasę</li>
+                    </ul>
+                </section>
+                <code class="code">&lt;znacznik class="name'&gt;treść&lt;/znacznik&gt;<br>.name {<br>właściwość:
+                    wartość;<br>}</code>
+                <p>Styl przy znaczniku HTML z wykorzystaniem atrybutu "style" - takie stylowanie nie jest dobrą
+                    praktyką.</p>
+                <code class="code">&lt;znacznik style="color:blue;"&gt;treść&lt;/znacznik&gt;</code>
+                <p>Styl w znaczniku "style"- z takim stylowaniem możemy się spotkać, jednak najczęściej najlepszym
+                    wyborem jest używanie stylów w osobnym pliku "style.css".</p>
+                <img class="img" src="img/styleMarkup.jpg" alt="przykład stylów w znaczniku style">
+                <p>Style osadzone w zanczniku "style".</p>
+                <img class="img" src="img/styleFile.jpg" alt="style umieszczone w osobnym pliku">
+                <p>Style umieszczone w osobnym pliku.</p>
+            </section>
+            <section class="section" id="browser">
+                <h3 class="h3">Jak działa przeglądarka</h3>
+                <p>http (Hypertext Transfer Protocol ) - protokół do transportowania całej zawartości strony. Obecnie
+                    rekomendowane jest używanie htpps, czyli połączenia szyfrowanego.</p>
+
+                <p>url (Uniform Resource Locator) - adres strony</p>
+                <p>Komunikacja przeglądarki z serwerem odbywa się w modelu request-response.</p>
+                <section>
+                    <h4 class="h4">Schemat działania</h4>
+                    <ul class="ul">
+                        <li>Wpisuję adres strony w przeglądarce.</li>
+                        <li>Przeglądarka szuka serwera strony pod podanym adresem [DNS].</li>
+                        <li>Następnie odpytuje serwer o index, gdy podamy sam adres. To co jest indexem zależy od
+                            konfiguracji serwera.</li>
+                        <li>Serwer wysyła zawartość html.</li>
+                        <li>Przeglądarka wczytuje html i wyszukuje wszystkich zasobów: style, obrazki, skrypty itp. i
+                            dla każdego z zasobów wykonuje osobne zapytanie do serwera.</li>
+                        <li>Przeglądarka prasuje i renderuje stronę.</li>
+                    </ul>
+                </section>
+            </section>
+        </article>
+
+    </main>
+    <footer class="footer">Projekt stworzony przez Andrzeja</footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
