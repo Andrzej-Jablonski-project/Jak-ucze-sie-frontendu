@@ -16,6 +16,7 @@ body {
     top: 0;
     padding: 10px 0;
     background: #fefefe;
+    z-index: 1;
 }
 
 .nav__list {
@@ -44,10 +45,17 @@ body {
     background: black;
 }
 
+.hero {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
 .hero__header {
     font-size: 3rem;
     padding: 40px;
     text-align: center;
+    animation: 200ms 500ms linear both heroHeader;
 }
 
 .heroArticle .nav {
@@ -76,13 +84,14 @@ body {
     max-width: 1100px;
     width: 100%;
     margin: 0 auto;
+    scroll-behavior: smooth;
 }
 
 .content__h3 {
     margin: 10px 0;
 }
 
-.paragraf__text {
+.paragraph__text {
     margin: 10px 0;
 }
 
@@ -115,6 +124,16 @@ body {
     margin: 10px auto;
 }
 
-.paragraf__text.paragraf__text-position {
+.paragraph__text.paragraph__text-position {
     text-align: center;
+}
+
+@keyframes heroHeader {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
