@@ -10,7 +10,7 @@ body {
     background: #fefefe;
 }
 
-.nav {
+.main__menu {
     position: sticky;
     left: 0;
     top: 0;
@@ -19,7 +19,8 @@ body {
     z-index: 1;
 }
 
-.nav__list {
+.main__list,
+.article__list {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,11 +28,13 @@ body {
     margin: 10px;
 }
 
-.nav__item {
+.main__item,
+.article__item {
     list-style: none;
 }
 
-.nav__link {
+.main__link,
+.article__link {
     display: block;
     text-decoration: none;
     text-transform: uppercase;
@@ -40,9 +43,14 @@ body {
     transition: .2s;
 }
 
-.nav__link:hover {
+.main__link:hover,
+.article__link:hover {
     color: #fefefe;
     background: black;
+}
+
+.article__list {
+    background: lightsalmon;
 }
 
 .hero {
@@ -58,16 +66,6 @@ body {
     animation: 200ms 500ms linear both heroHeader;
 }
 
-.heroArticle .nav {
-    position: static;
-    top: 0;
-    left: 0;
-}
-
-.heroArticle .nav__list {
-    background: lightsalmon;
-}
-
 .heroArticle__text {
     max-width: 800px;
     width: 100%;
@@ -75,7 +73,8 @@ body {
     text-align: center;
 }
 
-.content__h2 {
+.heroArticle__header,
+.article__header {
     text-align: center;
     margin: 20px 20px;
 }
@@ -87,35 +86,40 @@ body {
     scroll-behavior: smooth;
 }
 
-.content__h3 {
-    margin: 10px 0;
-}
-
-.paragraph__text {
-    margin: 10px 0;
-}
-
 .section {
     padding-top: 70px;
 }
 
-.section__list {
+
+.section__header {
+    margin: 10px 0;
+}
+
+.section__paragraph,
+.card__paragraph {
+    margin: 10px 0;
+}
+
+.section__list,
+.card__list {
     margin: 10px 10px 10px 30px;
 }
 
-.content__code {
+.section__code,
+.card__code {
     display: inline-block;
     margin: 10px;
     background: lightskyblue;
 }
 
-.footer {
-    padding: 20px;
-    text-align: center;
-    font-size: 2rem;
+.card {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
-.content__h4 {
+.card__header {
     color: cadetblue;
 }
 
@@ -124,12 +128,18 @@ body {
     margin: 10px auto;
 }
 
-.paragraph__text.paragraph__text-position {
+.section__paragraph.section__paragraph-position {
     text-align: center;
 }
 
 .wrong {
     color: red;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    font-size: 2rem;
 }
 
 @keyframes heroHeader {
