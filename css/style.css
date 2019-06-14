@@ -7,7 +7,9 @@
 
 body {
     font-family: 'Rubik', sans-serif;
-    background: #fefefe;
+    background: #FFFFEA;
+    background-size: 20px 20px;
+    background-image: linear-gradient(to right, #e9f0f0 1px, transparent 1px), linear-gradient(to bottom, #e9f0f0 1px, transparent 1px);
 }
 
 .main__menu {
@@ -15,7 +17,7 @@ body {
     left: 0;
     top: 0;
     padding: 10px 0;
-    background: #fefefe;
+    background: #8B7871;
     z-index: 1;
 }
 
@@ -50,7 +52,20 @@ body {
 }
 
 .article__list {
-    background: lightsalmon;
+    background: #ffa07a;
+}
+
+.article__list::after {
+    content: "\25BA";
+    display: block;
+    font-size: 2rem;
+    margin-left: 30px;
+    transform: rotate(180deg);
+    animation: heroHeader 1s linear 1.5s infinite alternate both;
+}
+
+.article {
+    font-size: 1.2rem;
 }
 
 .hero {
@@ -60,10 +75,23 @@ body {
 }
 
 .hero__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 3rem;
     padding: 40px;
     text-align: center;
     animation: 200ms 500ms linear both heroHeader;
+}
+
+.hero__header::after {
+    content: " </>";
+    margin: 20px;
+    transform: rotate(15deg);
+    background: -webkit-linear-gradient(#eee, #333);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .heroArticle__text {
@@ -109,7 +137,7 @@ body {
 .card__code {
     display: inline-block;
     margin: 10px;
-    background: lightskyblue;
+    background: #C0D3D3;
 }
 
 .card {
@@ -120,12 +148,15 @@ body {
 }
 
 .card__header {
-    color: cadetblue;
+    color: #4ECC6F;
 }
 
 .image {
     display: block;
+    width: 100%;
+    max-width: 800px;
     margin: 10px auto;
+    padding: 10px;
 }
 
 .section__paragraph.section__paragraph-position {
@@ -140,6 +171,7 @@ body {
     padding: 20px;
     text-align: center;
     font-size: 2rem;
+    background: #8B7871;
 }
 
 @keyframes heroHeader {
