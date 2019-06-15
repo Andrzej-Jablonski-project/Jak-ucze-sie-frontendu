@@ -162,15 +162,32 @@
                 <section class="section" id="dom">
                     <h3 class="section__header">DOM</h3>
                     <p class="section__paragraph">DOM - Document Object Model/Obiektowy model dokumentu. Plik HTML nie
-                        jest
-                        DOM, źródło strony też nie jest DOM. To co widzimy w devtoolsach to jest DOM. HTML jest
-                        instukcją do wyrenderowania strony przez przeglądarkę.</p>
+                        jest DOM, źródło strony też nie jest DOM. To, co widzimy w devtoolsach to jest DOM. HTML jest
+                        instrukcją do wyrenderowania strony przez przeglądarkę.</p>
                     <ul class="section__list">
                         <li>DOM to "złożony" w przeglądarce HTML</li>
                         <li>JavaScript może modyfikować DOM</li>
                         <li>korzystając z BEM - tworzymy dodatkową klasę z modyfikatorem --js (ułatwia identyfikację /
                             usuwa potencjalne problemy)</li>
                     </ul>
+                    <section class="card">
+                        <h4 class="card__header">JS</h4>
+                        <p class="card__paragraph">Pobieranie elementów</p>
+                        <ul class="card__list">
+                            <li>document.querySelector('.selector') - pobiera pojedyńczy element</li>
+                            <li>document.querySelectorAll('.selector') - pobiera node list, czyli listę węzłów, wiele
+                                elementów</li>
+                            <li>document.querySelectorAll('p')[5] - pobranie szóstego elementu node listy.</li>
+                        </ul>
+                        <p class="card__paragraph">Modyfikacja treści</p>
+                        <ul class="card__list">
+                            <li>innerHTML - zwraca treść bez HTML <br> <code class="card__code">const content =
+                                    document.querySelector('p'); <br><br>console.log(content.innerHTML);</code></li>
+                            <li>innerHTML = 'treść' - modyfikuję treść, elementy HTML<br> <code class="card__code">const
+                                    content = document.querySelector('p'); <br><br>content.innerHTML =
+                                    '&lt;strong&gt;nowa&lt;/strong&gt;treść';</code></li>
+                        </ul>
+                    </section>
                 </section>
             </div>
         </article>
