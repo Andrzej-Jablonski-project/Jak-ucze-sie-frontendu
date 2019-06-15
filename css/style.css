@@ -94,7 +94,8 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-.heroArticle__text {
+.heroArticle__text,
+.article__paragraph {
     max-width: 800px;
     width: 100%;
     margin: 20px auto;
