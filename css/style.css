@@ -140,6 +140,7 @@ body {
     display: inline-block;
     margin: 10px;
     background: #C0D3D3;
+    padding: 10px;
 }
 
 .card {
@@ -174,6 +175,41 @@ body {
     text-align: center;
     font-size: 2rem;
     background: #8B7871;
+}
+
+.table {
+    width: 99%;
+    border: 1px solid black;
+    margin: 20px auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.table__caption {
+    text-align: center;
+    border: 1px solid black;
+    background: #BFBFB0;
+    padding: 10px;
+}
+
+.table__cell {
+    padding: 10px;
+}
+
+.table__cell:nth-child(1) {
+    border-right: 1px solid black;
+}
+
+.table__head .table__cell {
+    border: 1px solid black;
+}
+
+.table__cell.table__cell--truthy {
+    background: #B2CCA7;
+}
+
+.table__cell.table__cell--falsy {
+    background: #A7A9CC;
 }
 
 @keyframes heroHeader {

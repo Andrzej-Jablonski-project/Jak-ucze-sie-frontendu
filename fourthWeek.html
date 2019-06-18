@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Umieć frontend</title>
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <main class="main">
+        <nav class="main__menu">
+            <ul class="main__list">
+                <li class="main__item"><a class="main__link" href="index.html">pierwszy tydzień</a></li>
+                <li class="main__item"><a class="main__link" href="secondWeek.html">drugi tydzień</a></li>
+                <li class="main__item"><a class="main__link" href="thirdWeek.html">trzeci tydzień</a></li>
+                <li class="main__item"><a class="main__link" href="fourthWeek.html">czwarty tydzień</a></li>
+                <li class="main__item"><a class="main__link" href="fifthWeek.html">piąty tydzień</a></li>
+                <li class="main__item"><a class="main__link" href="sixthWeek.html">szósty tydzień</a></li>
+                <li class="main__item"><a class="main__link" href="seventhWeek.html">siódmy tydzień</a></li>
+                <li class="main__item"><a class="main__link" href="eightWeek.html">ósmy tydzień</a></li>
+                <li class="main__item"><a class="main__link" href="ninthWeek.html">dziewiąty tydzień</a></li>
+                <li class="main__item"><a class="main__link" href="tenthWeek.html">dziesiąty tydzień</a></li>
+                <li class="main__item"><a class="main__link" href="eleventhWeek.html">jedenasty tydzień</a></li>
+            </ul>
+        </nav>
+        <header class="hero">
+            <h1 class="hero__header">Jak uczyłem się frontendu</h1>
+        </header>
+        <article class="article">
+            <header class="article_hero">
+                <nav class="article__menu">
+                    <ul class="article__list">
+                        <li class="article__item"><a class="article__link" href="#js">JavaScript</a></li>
+                        <li class="article__item"><a class="article__link" href="#function">funkcja w JS</a></li>
+
+                    </ul>
+                </nav>
+            </header>
+
+
+            <h2 class="article__header">Czwarty tydzień nauki</h2>
+            <div class="wrapper">
+                <section class="section" id="js">
+                    <h3 class="section__header">logika w JS</h3>
+                    <section class="card">
+                        <h4 class="card__header">Operatory porównania</h4>
+                        <ul class="card__list">
+                            <li><strong>></strong> - lewa strona większa od prawej</li>
+                            <li><strong>&lt;</strong> - lewa strona mniejsza od prawej</li>
+                            <li><strong>>=</strong> - lewa strona większa / równa od prawej</li>
+                            <li><strong>&lt;=</strong> - lewa strona mniejsza / równa od prawej</li>
+                            <li><strong>==</strong> - obie strony równe, konwersja typów</li>
+                            <li><strong>===</strong> - obie strony równe, bez konwersji typów </li>
+                            <li><strong>!=</strong> - obie strony różne, konwersja typów</li>
+                            <li><strong>!==</strong> - obie strony różne, bez konwersji typów </li>
+                        </ul>
+                    </section>
+                    <section class="data">
+                        <table class=table>
+                            <caption class="table__caption">Truthy and Falsy</caption>
+                            <tdead class="table__head">
+                                <tr class="table__row">
+                                    <th class="table__cell table__cell--truthy">Truthy </th>
+                                    <th class="table__cell table__cell--falsy">Falsy </th>
+                                </tr>
+                            </tdead>
+                            <tbody>
+                                <tr class="table__row">
+                                    <td class="table__cell">'Tekst' - string </td>
+                                    <td class="table__cell">false </td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td class="table__cell">14 - liczba </td>
+                                    <td class="table__cell">0 - zero </td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td class="table__cell">-8 - liczba ujemna </td>
+                                    <td class="table__cell">'', "", `` - pusty string </td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td class="table__cell">{ } - pusty obiekt </td>
+                                    <td class="table__cell">null </td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td class="table__cell">[ ] - pusta tablica </td>
+                                    <td class="table__cell">undefined </td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td class="table__cell">function( ){ } - pusta funkcja itd. </td>
+                                    <td class="table__cell">NaN - not a number</td>
+                                </tr>
+                            </tbody>
+                            <tfoot class="table__footer">
+                                <tr class="table__row">
+                                    <th class="table__cell table__cell--truthy"><a
+                                            href="https://developer.mozilla.org/en-US/docs/Glossary/Truthy">https://developer.mozilla.org/en-US/docs/Glossary/Truthy</a>
+                                    </th>
+                                    <th class="table__cell table__cell--falsy"><a
+                                            href="https://developer.mozilla.org/en-US/docs/Glossary/Falsy">https://developer.mozilla.org/en-US/docs/Glossary/Falsy</a>
+                                    </th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </section>
+                    <p class="section__paragraph">Instrukcja warunkowa</p>
+                    <code class="section__code">if (warunek){<br>blok kodu <br>gdy warunek jest prawdziwy (true), to kod
+                        się wykona <br> }</code>
+                    <p class="section__paragraph">AND - wszystkie warunki muszą być true</p>
+                    <code class="section__code">if (warunek && warunek){<br>blok kodu <br>gdy wszystkie warunki są
+                        prawdziwe (true), to kod się wykona <br> }</code>
+                    <p class="section__paragraph">OR - przynajmniej jeden warunek ma być true</p>
+                    <code class="section__code">if (warunek || warunek){<br>blok kodu <br>gdy przynajmniej jeden warunek
+                        jest prawdziwy (true), to kod się wykona <br> }</code>
+                    <p class="section__paragraph">NOT - odwraca wartość wyrażenia logicznego</p>
+                    <code class="section__code">if (!(warunek)){<br>!false => true <br>
+                        !true => false <br>
+                        blok kodu <br>gdy warunek jest prawdziwy (true),
+                        to kod się wykona <br> }</code>
+                    <p class="section__paragraph">else</p>
+                    <code class="section__code">if (warunek) { <br>
+                        // wykonaj kod jeśli true <br>
+                        } else { <br>
+                        // wykonaj kod jeśli false <br>
+                        }
+                    </code>
+                    <p class="section__paragraph">else if</p>
+                    <code class="section__code">if (warunek) { <br>
+                        // wykonaj kod jeśli true, jeśli false przejdź do następnego if <br>
+                        } else if (warunek) { <br>
+                        // wykonaj kod jeśli true <br>
+                        }
+                    </code>
+                    <p class="section__paragraph">Zapis skrócony</p>
+                    <code class="section__code">(zmienna1 > zmienna2) ? console.log('true') : console.log('false')
+                        <br> <br>(warunek) ? kod wykonuje gdy warunek jest true : kod wykonuje gdy warunek jest false
+                    </code>
+                    <p class="section__paragraph">Switch - przełącznik</p>
+                    <code class="section__code">const fruit = 'banana'; <br>
+                        switch (fruit) { <br> case apple: <br>console.log(kod się nie wykona); <br>break; <br> case
+                        banana: <br>console.log(kod się wykona); <br>break; <br>default: <br> console.log(kod się wykona
+                        tylko wtedy, gdy żadne z powyższych warunków nie zostaną spełnione); <br>}</code>
+                    <section class="card">
+                        <h4 class="card__header">Troszkę logicznego śmiechu :)</h4>
+                        <a
+                            href="https://www.destroyallsoftware.com/talks/wat">https://www.destroyallsoftware.com/talks/wat</a>
+                    </section>
+                    <section class="section" id="function">
+                        <h3 class="section__header">funkcje</h3>
+                    </section>
+            </div>
+        </article>
+    </main>
+    <footer class="footer">Projekt stworzony przez Andrzeja</footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
