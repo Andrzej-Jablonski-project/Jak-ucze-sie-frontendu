@@ -59,53 +59,52 @@
                             <li><strong>!==</strong> - obie strony różne, bez konwersji typów </li>
                         </ul>
                     </section>
-                    <section class="data">
-                        <table class=table>
-                            <caption class="table__caption">Truthy and Falsy</caption>
-                            <tdead class="table__head">
-                                <tr class="table__row">
-                                    <th class="table__cell table__cell--truthy">Truthy </th>
-                                    <th class="table__cell table__cell--falsy">Falsy </th>
-                                </tr>
-                            </tdead>
-                            <tbody>
-                                <tr class="table__row">
-                                    <td class="table__cell">'Tekst' - string </td>
-                                    <td class="table__cell">false </td>
-                                </tr>
-                                <tr class="table__row">
-                                    <td class="table__cell">14 - liczba </td>
-                                    <td class="table__cell">0 - zero </td>
-                                </tr>
-                                <tr class="table__row">
-                                    <td class="table__cell">-8 - liczba ujemna </td>
-                                    <td class="table__cell">'', "", `` - pusty string </td>
-                                </tr>
-                                <tr class="table__row">
-                                    <td class="table__cell">{ } - pusty obiekt </td>
-                                    <td class="table__cell">null </td>
-                                </tr>
-                                <tr class="table__row">
-                                    <td class="table__cell">[ ] - pusta tablica </td>
-                                    <td class="table__cell">undefined </td>
-                                </tr>
-                                <tr class="table__row">
-                                    <td class="table__cell">function( ){ } - pusta funkcja itd. </td>
-                                    <td class="table__cell">NaN - not a number</td>
-                                </tr>
-                            </tbody>
-                            <tfoot class="table__footer">
-                                <tr class="table__row">
-                                    <th class="table__cell table__cell--truthy"><a
-                                            href="https://developer.mozilla.org/en-US/docs/Glossary/Truthy">https://developer.mozilla.org/en-US/docs/Glossary/Truthy</a>
-                                    </th>
-                                    <th class="table__cell table__cell--falsy"><a
-                                            href="https://developer.mozilla.org/en-US/docs/Glossary/Falsy">https://developer.mozilla.org/en-US/docs/Glossary/Falsy</a>
-                                    </th>
-                                </tr>
-                            </tfoot>
-                        </table>
-                    </section>
+                    <table class=table>
+                        <caption class="table__caption">Truthy and Falsy</caption>
+                        <thead class="table__head">
+                            <tr class="table__row">
+                                <th class="table__cell table__cell--truthy">Truthy </th>
+                                <th class="table__cell table__cell--falsy">Falsy </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table__row">
+                                <td class="table__cell">'Tekst' - string </td>
+                                <td class="table__cell">false </td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell">14 - liczba </td>
+                                <td class="table__cell">0 - zero </td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell">-8 - liczba ujemna </td>
+                                <td class="table__cell">'', "", `` - pusty string </td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell">{ } - pusty obiekt </td>
+                                <td class="table__cell">null </td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell">[ ] - pusta tablica </td>
+                                <td class="table__cell">undefined </td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell">function( ){ } - pusta funkcja itd. </td>
+                                <td class="table__cell">NaN - not a number</td>
+                            </tr>
+                        </tbody>
+                        <tfoot class="table__footer">
+                            <tr class="table__row">
+                                <th class="table__cell table__cell--truthy"><a
+                                        href="https://developer.mozilla.org/en-US/docs/Glossary/Truthy">https://developer.mozilla.org/en-US/docs/Glossary/Truthy</a>
+                                </th>
+                                <th class="table__cell table__cell--falsy"><a
+                                        href="https://developer.mozilla.org/en-US/docs/Glossary/Falsy">https://developer.mozilla.org/en-US/docs/Glossary/Falsy</a>
+                                </th>
+                            </tr>
+                        </tfoot>
+                    </table>
+
                     <p class="section__paragraph">Instrukcja warunkowa</p>
                     <code class="section__code">if (warunek){<br>blok kodu <br>gdy warunek jest prawdziwy (true), to kod
                         się wykona <br> }</code>
@@ -150,7 +149,55 @@
                     </section>
                     <section class="section" id="function">
                         <h3 class="section__header">funkcje</h3>
+                        <section class="card">
+                            <h4 class="card__header">Funkcja w JS</h4>
+                            <ul class="card__list">
+                                <li>Deklarujemy nazwę funkcji (nie zawsze)</li>
+                                <li>W środku dokonujemy obliczeń / wykonujemy zadania</li>
+                                <li>Funkcja może przyjmować argumenty</li>
+                                <li>Funkcja zwraca zawsze coś (nawet jeśli nie mamy return - wtedy funkcja zwraca
+                                    undefined)</li>
+                            </ul>
+                        </section>
+                        <p class="section__paragrapf">Stworzenie funkcji</p>
+                        <code class="section__code">function calculate(x) { <br>
+                            x = x + 5; <br>
+                            console.log(x); <br>
+                            return x*8; <br>
+                            }
+                        </code>
+                        <p class="section__paragrapf">Wywołanie funkcji</p>
+                        <code class="section__code">calculate(5);</code>
+                        <section class="card">
+                            <h4 class="card__header">Po co funkcje?</h4>
+                            <ul class="card__list">
+                                <li>Deklarujemy kod, który się powtarza (DRY - don't repeat yourself)</li>
+                                <li>Zwiększamy czytelność kodu</li>
+                                <li>Łatwiejsze szukanie błędów</li>
+                                <li>Odpowiedzialność za wykonywanie zadania w jednym miejscu</li>
+                            </ul>
+                        </section>
+                        <p class="section__paragrph">(Fat) arrow functions - funkcja strzałkowa</p>
+                        <code class="section__code">const calculate = (x) => { <br>
+                            x = x + 5; <br>
+                            return x*8; <br>
+                            }
+                        </code>
+                        <p class="section__paragrph">Skrócony zapis</p>
+                        <code class="section__code">const calculate = x => (x+5)*8 <br></code>
+                        <section class="card">
+                            <h4 class="card__header">Funkcja strzałkowa</h4>
+                            <ul class="card__list">
+                                <li>Skraca zapis deklaracji funkcji</li>
+                                <li>Zwiększa czytelność (dyskusyjne)</li>
+                                <li>Nie tworzy nowego kontekstu this, nie ma dostępu do arguments i super</li>
+                                <li>Nie jest zamiennikiem "tradycyjnej" funkcji (ale w większości przypadków nie
+                                    zobaczysz różnicy)</li>
+                            </ul>
+                        </section>
+
                     </section>
+                </section>
             </div>
         </article>
     </main>
