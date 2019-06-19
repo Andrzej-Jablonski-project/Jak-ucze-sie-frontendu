@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Umieć frontend</title>
     <link href="https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -38,6 +39,7 @@
                         <li class="article__item"><a class="article__link" href="#function">funkcja w JS</a></li>
                         <li class="article__item"><a class="article__link" href="#debugging">debugging</a></li>
                         <li class="article__item"><a class="article__link" href="#markup">markup</a></li>
+                        <li class="article__item"><a class="article__link" href="#normalization">normalizacja</a></li>
                     </ul>
                 </nav>
             </header>
@@ -228,8 +230,39 @@
                 <section class="section" id="markup">
                     <h3 class="section__header">Znaczniki - listy, tabele, definicje</h3>
                     <ul class="section__list">
-
+                        <li><strong>&lt;ul&gt;...&lt;/ul&gt;</strong> - UnorderedList, lista nieuporządkowana</li>
+                        <li><strong>&lt;ol&gt;...&lt;/ol&gt;</strong> - Ordered List, lista uporządkowana</li>
+                        <li><strong>&lt;li&gt;...&lt;/li&gt;</strong> - List Item, element listy </li>
+                        <li><strong>&lt;dl&gt;...&lt;/dl&gt;</strong> - Description list, lista opisów </li>
+                        <li><strong>&lt;dt&gt;...&lt;/dt&gt;</strong> - Description term, np. tytuł zagadnienia</li>
+                        <li><strong>&lt;dd&gt;...&lt;/dd&gt;</strong> - Description details, opis szczegółowy</li>
+                        <li><strong>&lt;table&gt;...&lt;/table&gt;</strong> - tabela</li>
+                        <li><strong>&lt;tr&gt;...&lt;/tr&gt;</strong> - table row, wiersz tabeli</li>
+                        <li><strong>&lt;td&gt;...&lt;/td&gt;</strong> - table data (cell), dane tabeli</li>
+                        <li><strong>&lt;thead&gt;...&lt;/thead&gt;</strong> - nagłówek tabeli</li>
+                        <li><strong>&lt;th&gt;...&lt;/th&gt;</strong> - komórka w nagłówku tabeli</li>
+                        <li><strong>&lt;tbody&gt;...&lt;/tbody&gt;</strong> - "ciało" tabeli</li>
+                        <li><strong>&lt;caption&gt;...&lt;/caption&gt;</strong> - opis tabeli</li>
+                        <li><strong>&lt;tfoot&gt;...&lt;/tfoot&gt;</strong> - stopka tabeli</li>
                     </ul>
+                    <p class="section__paragraph">Tabele używamy do danych tabelarycznych. <strong
+                            class="wrong">Tabelami nie budujemy layoutów.</strong> </p>
+                </section>
+                <section class="section" id="normalization">
+                    <h3 class="section__header">Normalizacja, reset</h3>
+                    <p class="section__paragraph">Każda przeglądarka posiada swoje style domyślne. Normalizację i
+                        reset stosujemy, żeby te style były wszędzie takie same.</p>
+                    <p class="section__paragrph">Przykładowy reset:</p>
+                    <code class="section__code">* { <br>
+                        margin:0; <br>
+                        padding: 0; <br>
+                        box-sizing: border box; <br>
+                        }
+                    </code>
+                    <p class="section__paragraph">Plik normalizacji: <a
+                            href="https://necolas.github.io/normalize.css/">https://necolas.github.io/normalize.css/</a>
+                    </p>
+                    <p class="section__paragraph">Normalizację z resetem możemy miksować.</p>
                 </section>
             </div>
         </article>
