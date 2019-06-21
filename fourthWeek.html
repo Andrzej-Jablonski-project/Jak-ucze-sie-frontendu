@@ -40,6 +40,9 @@
                         <li class="article__item"><a class="article__link" href="#debugging">debugging</a></li>
                         <li class="article__item"><a class="article__link" href="#markup">markup</a></li>
                         <li class="article__item"><a class="article__link" href="#normalization">normalizacja</a></li>
+                        <li class="article__item"><a class="article__link" href="#flexbox">flexbox</a></li>
+                        <li class="article__item"><a class="article__link" href="#background">tło</a></li>
+
                     </ul>
                 </nav>
             </header>
@@ -263,6 +266,63 @@
                             href="https://necolas.github.io/normalize.css/">https://necolas.github.io/normalize.css/</a>
                     </p>
                     <p class="section__paragraph">Normalizację z resetem możemy miksować.</p>
+                </section>
+                <section class="section" id="flexbox">
+                    <h3 class="section__header">Flexbox</h3>
+                    <p class="section__paragraph">Flexbox - system rozmieszczania i pozycjonowania elementów w dwóch
+                        osiach. W pionie i poziomie.</p>
+                    <img class="image" src="img/flex-direction.webp" alt="flexbox">
+                    <p class="section__paragraph"> <strong>flex-direction:</strong> row, column, row-reverse,
+                        column-reverse - wybór osi rozmieszczania elementów</p>
+                    <p class="section__paragraph"><strong>flex-wrap:</strong> nowrap, wrap, wrap-reverse - określa czy
+                        elementy w wierszu, kolumnie mają być w jednej lini czy zwijane</p>
+                    <p class="section__paragraph"><strong>flex-flow:</strong> - skrócona własność, w której możemy
+                        określić flex-direction i flex-wrap</p>
+                    <p class="section__paragraph"><strong>justify-content:</strong> flex-start, flex-end, center,
+                        space-between, space-around - ustawianie elementów wzdłuż osi flex-direction</p>
+                    <p class="section__paragraph"><strong>align-content:</strong> stretch, flex-start, flex-end, center,
+                        space-between, space-around - ustawianie wierszy/kolumn wzdłuż osi przeciwnej do flex-direction
+                    </p>
+                    <p class="section__paragraph"><strong>align-items:</strong> stretch, flex-start, flex-end, center,
+                        baseline - ustawianie elementów wzdłuż osi przeciwnej do flex-direction</p>
+                    <p class="section__paragraph"><strong>align-self:</strong> stretch, flex-start, flex-end, center,
+                        baseline - ustawianie <strong>elementu</strong> wzdłóż osi przeciwnej do flex-direction</p>
+                    <p class="section__paragraph"><strong>order:</strong> 0, liczba całkowita (-/+) - określa kolejność
+                        elementów</p>
+                    <p class="section__paragraph"><strong>flex-grow:</strong> 0, liczba/proporcja - jak bardzo elementy
+                        mają rosnąć</p>
+                    <p class="section__paragraph"><strong>flex-shrink:</strong> 1, liczba/proporcja - jak bardzo
+                        elementy mają maleć</p>
+                    <p class="section__paragraph"><strong>flex-basis:</strong> none, rozmiar bazowy - ustawia rozmiar
+                        początkowy/główny elementów</p>
+                    <p class="section__paragraph"><strong>flex:</strong> flex-grow, flex-shrink, flex-basis - zapis
+                        skrócony</p>
+                </section>
+                <section class="section" id="background">
+                    <h3 class="section__header">Tło</h3>
+                    <p class="section__paragraph"> <strong>background-image:</strong> url('sciezka-do-pliku') -
+                        ustawienie obrazku jako tło</p>
+                    <p class="section__paragraph"> <strong>background-position:</strong> pozycja <strong>y:</strong>
+                        top, bottom, center, yy%, yypx pozycja <strong>x:</strong> right, left, center, xx%, xxpx -
+                        pozycjonowanie tła</p>
+                    <p class="section__paragraph"> <strong>background-repeat:</strong> repeat, repeat-x, repeat-y,
+                        no-repeat, round, space - powtarzanie tła</p>
+                    <p class="section__paragraph"> <strong>background-attachment:</strong> scroll, fixed, local - </p>
+                    <p class="section__paragraph"> <strong>background-origin:</strong> border-box, padding-box,
+                        content-box - definiuje w którym miejscu tło powinno się zaczynać</p>
+                    <p class="section__paragraph"> <strong>background-clip:</strong> border-box, padding-box,
+                        content-box - w którym miejscu tło ma być cięte</p>
+                    <p class="section__paragraph"> <strong>background-color:</strong> wartość koloru - ustawia kolor tła
+                    </p>
+                    <p class="section__paragraph"> <strong>background-size:</strong> auto, cover, contain, &lt;width&gt;
+                        &lt;height&gt; - określa wielkość obrazka</p>
+                    <section class="card">
+                        <h4 class="card__header">Gradienty</h4>
+                        <p class="card__paragraph">Gradient – wypełnienie określonego obszaru płynnym przejściem
+                            tonalnym pomiędzy co najmniej dwoma kolorami.</p>
+                        <a href="https://cssgradient.io/gradient-backgrounds/" class="card__link">
+                            https://cssgradient.io/gradient-backgrounds/</a>
+                    </section>
                 </section>
             </div>
         </article>
