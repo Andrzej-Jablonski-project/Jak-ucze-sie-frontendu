@@ -18,6 +18,104 @@ body {
     background-image: linear-gradient(to right, #e9f0f0 1px, transparent 1px), linear-gradient(to bottom, #e9f0f0 1px, transparent 1px);
 }
 
+.menuButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 4rem;
+    height: 4rem;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 2rem;
+    border: 3px solid #1a1a1a;
+    background: #fefefe;
+    transform: rotate(90deg);
+}
+
+.menuButton:hover {
+    cursor: pointer;
+}
+
+.menuButton__line {
+    font-size: 3rem;
+    color: #1a1a1a;
+    transform: rotate(45deg);
+}
+
+.switch__line-off {
+    animation-name: line-off;
+    animation-duration: .6s;
+    animation-fill-mode: both;
+}
+
+.switch__line-on {
+    animation-name: line-on;
+    animation-duration: .6s;
+    animation-fill-mode: both;
+}
+
+.menuButton__switch-off {
+    animation-name: button;
+    animation-duration: .6s;
+    animation-fill-mode: both;
+}
+
+.menuButton__switch-on {
+    animation-name: button-on;
+    animation-duration: .6s;
+    animation-fill-mode: both;
+}
+
+@keyframes line-off {
+    from {
+        transform: rotate(135deg);
+        color: #efefef;
+    }
+
+    to {
+        transform: rotate(45deg);
+        color: #1a1a1a;
+    }
+}
+
+@keyframes line-on {
+    from {
+        transform: rotate(45deg);
+        color: #1a1a1a;
+    }
+
+    to {
+        transform: rotate(135deg);
+        color: #fff;
+    }
+}
+
+@keyframes button {
+    from {
+        background-color: #1a1a1a;
+        border-color: #fefefe;
+    }
+
+    to {
+        background-color: #fefefe;
+        border-color: #1a1a1a;
+    }
+}
+
+@keyframes button-on {
+    from {
+        background-color: #fefefe;
+        border-color: #1a1a1a;
+    }
+
+    to {
+        background-color: #1a1a1a;
+        border-color: #fefefe;
+    }
+}
+
 .main__menu {
     position: sticky;
     left: 0;
