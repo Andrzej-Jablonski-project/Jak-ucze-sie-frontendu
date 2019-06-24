@@ -32,6 +32,7 @@ body {
     border: 3px solid #1a1a1a;
     background: #fefefe;
     transform: rotate(90deg);
+    z-index: 2;
 }
 
 .menuButton:hover {
@@ -117,12 +118,50 @@ body {
 }
 
 .main__menu {
-    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
     left: 0;
     top: 0;
-    padding: 10px 0;
+    width: 100vw;
+    height: 100vh;
     background: #8B7871;
+    transform: translateX(-100%);
+    padding: 2rem;
     z-index: 1;
+}
+
+.main__menu-on {
+    animation-name: menu-on;
+    animation-duration: .6s;
+    animation-fill-mode: both;
+}
+
+.main__menu-off {
+    animation-name: menu-off;
+    animation-duration: .6s;
+    animation-fill-mode: both;
+}
+
+@keyframes menu-on {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes menu-off {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
 }
 
 .article__menu {
@@ -143,6 +182,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    padding: 0;
     margin: 10px;
 }
 
@@ -185,9 +225,6 @@ body {
 }
 
 .hero {
-    position: relative;
-    top: 0;
-    left: 0;
     background: rgb(78, 204, 111);
     background: -moz-radial-gradient(circle, rgba(78, 204, 111, 1) 0%, rgba(255, 255, 255, 0) 62%);
     background: -webkit-radial-gradient(circle, rgba(78, 204, 111, 1) 0%, rgba(255, 255, 255, 0) 62%);
@@ -238,7 +275,7 @@ body {
 }
 
 .section {
-    padding-top: 70px;
+    padding-top: 86px;
     margin-bottom: 40px;
 }
 
