@@ -12,7 +12,8 @@
 </head>
 
 <body>
-    <button class="menuButton"><span class="menuButton__line menuButton__line-js">|</span></button>
+    <button class="menuButton" aria-label="otwórz menu strony"><span
+            class="menuButton__line menuButton__line-js">|</span></button>
     <nav class="menu">
         <section class="menu__section">
             <h2 class="menu__header">O czym jest ta strona</h2>
@@ -69,6 +70,8 @@
                         <li class="menu__item">Formularze</li>
                         <li class="menu__item">Grid</li>
                         <li class="menu__item">Media queries</li>
+                        <li class="menu__item">Event</li>
+                        <li class="menu__item">Hamburger</li>
                     </ul>
                 </a></li>
             <li class="menu__item"><a class="menu__link" href="sixthWeek.html"><strong class="strong__header">szósty
@@ -90,7 +93,7 @@
             <h1 class="hero__header">Jak uczyłem się frontendu</h1>
         </header>
         <article class="article">
-            <button class="article__button article__button-position"><span
+            <button class="article__button article__button-position" aria-label="otwórz menu sekcji"><span
                     class="menuButton__line article__button__line-js">|</span></button>
             <header class="article__nav">
                 <nav class="article__menu">
@@ -98,6 +101,8 @@
                         <li class="article__item"><a class="article__link" href="#form">formularze</a></li>
                         <li class="article__item"><a class="article__link" href="#grid">grid</a></li>
                         <li class="article__item"><a class="article__link" href="#mQueries">media queries</a></li>
+                        <li class="article__item"><a class="article__link" href="#event">event</a></li>
+                        <li class="article__item"><a class="article__link" href="#hamburger">hamburger</a></li>
                     </ul>
                 </nav>
             </header>
@@ -229,7 +234,41 @@
                 </section>
                 <section class="section" id="event">
                     <h3 class="section__header">Event</h3>
-
+                    <p class="section__paragraph"><strong>element.addEventListener(type, listener [, options])</strong>
+                        - nasłuchiwanie zdarzenia</p>
+                    <section class="card">
+                        <h4 class="card__header">mouse events</h4>
+                        <ul class="card__list">
+                            <li>click</li>
+                            <li>mouseenter</li>
+                            <li>mouseleave</li>
+                            <li>mouseover</li>
+                        </ul>
+                        <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/Events#Mouse_events">https://developer.mozilla.org/en-US/docs/Web/Events#Mouse_events</a>
+                    </section>
+                    <p class="section__paragraph">Przykłady:</p>
+                    <code class="section__code">function nameFunction() { <br>
+                        console.log('dajesz klika'); <br>
+                        } <br><br>
+                        element.addEventListener('click', nameFunction);
+                    </code>
+                    <code class="section__code">element.addEventListener('click', (<strong>e</strong>) => { <br>
+                        console.log('dajesz klika'); <br>
+                        })</code>
+                    <p class="section__paragraph"><strong>e</strong> = Event</p>
+                    <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/API/Event">https://developer.mozilla.org/en-US/docs/Web/API/Event</a>
+                </section>
+                <section class="section" id="hamburger">
+                    <h3 class="section__header">Hamburger menu - elementy użyte przy tworzeniu hamburger menu</h3>
+                    <p class="section__paragraph"><strong>&lt;button&gt;...&lt;/button&gt;</strong> - znacznik przycisku
+                    </p>
+                    <p class="section__paragraph"><strong>element.classList.add</strong> - dodaje klasę</p>
+                    <p class="section__paragraph"><strong>element.classList.remove</strong> - usuwa klasę</p>
+                    <p class="section__paragraph"><strong>element.classList.toggle</strong> - przełącza klasę</p>
+                    <p class="section__paragraph"><strong>element.classList.contains</strong> - sprawdza czy klasa
+                        istnieje</p>
                 </section>
             </div>
         </article>
