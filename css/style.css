@@ -648,8 +648,8 @@ body {
 
     .image {
         display: block;
-        width: 100%;
-        max-width: 800px;
+        width: auto;
+        max-width: 1100px;
         margin: 10px auto;
         padding: 10px;
     }
